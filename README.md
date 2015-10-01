@@ -1,4 +1,4 @@
-yii2-mdash
+п»їyii2-mdash
 =================
 E. Muravjov's typographer for Yii2
 
@@ -56,7 +56,7 @@ $mdash = new Mdash([
   ]
 ]);
 
-echo $mdash->process("мой текст");
+echo $mdash->process("РјРѕР№ С‚РµРєСЃС‚");
 ```
 
 Usage as filter:
