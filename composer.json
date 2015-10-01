@@ -1,6 +1,6 @@
 ﻿{
     "name": "mrssoft/yii2-mdash",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "E. Muravjov's typographer for Yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","typograph","mdash"],
