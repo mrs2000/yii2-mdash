@@ -2,9 +2,9 @@
 
 namespace mrssoft\mdash;
 
-use app\models\Object;
 use Yii;
 use EMTypograph;
+use yii\base\Object;;
 
 /**
  * Типограф Е.Муравьёва
