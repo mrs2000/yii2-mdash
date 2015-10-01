@@ -1,4 +1,4 @@
-<?
+ï»¿<?
 
 namespace mrssoft\mdash;
 
@@ -7,7 +7,7 @@ use EMTypograph;
 use yii\base\Object;;
 
 /**
- * Òèïîãðàô Å.Ìóðàâü¸âà
+ * Ð¢Ð¸Ð¿Ð¾Ð³Ñ€Ð°Ñ„ Ð•.ÐœÑƒÑ€Ð°Ð²ÑŒÑ‘Ð²Ð°
  * http://mdash.ru/
  *
  * Class Mdash
@@ -16,25 +16,25 @@ use yii\base\Object;;
 class Mdash extends Object
 {
     /**
-     * Îïèöèè òèïîãðàôà
+     * ÐžÐ¿Ð¸Ñ†Ð¸Ð¸ Ñ‚Ð¸Ð¿Ð¾Ð³Ñ€Ð°Ñ„Ð°
      * @var array
      */
     public $options = [];
 
     /**
-     * Óäàë¸ííîå èëè ëîêëüíîå âûïîëíåíèå
+     * Ð£Ð´Ð°Ð»Ñ‘Ð½Ð½Ð¾Ðµ Ð¸Ð»Ð¸ Ð»Ð¾ÐºÐ»ÑŒÐ½Ð¾Ðµ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ
      * @var bool
      */
     public $remote = false;
 
     /**
-     * Àäðåñ API
+     * ÐÐ´Ñ€ÐµÑ API
      * @var string
      */
     public $apiUrl = 'http://mdash.ru/api.v1.php';
 
     /**
-     * Çàïóñòèòü òèïîãðàô íà âûïîëíåíèå
+     * Ð—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚ÑŒ Ñ‚Ð¸Ð¿Ð¾Ð³Ñ€Ð°Ñ„ Ð½Ð° Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ
      * @param string $text
      * @return string
      */
@@ -53,7 +53,7 @@ class Mdash extends Object
     }
 
     /**
-     * Ëîêàëüíî
+     * Ð›Ð¾ÐºÐ°Ð»ÑŒÐ½Ð¾
      * @param string $text
      * @return string
      */
@@ -68,7 +68,7 @@ class Mdash extends Object
     }
 
     /**
-     * Óäàë¸ííî
+     * Ð£Ð´Ð°Ð»Ñ‘Ð½Ð½Ð¾
      * @param string $text
      * @return string
      */
