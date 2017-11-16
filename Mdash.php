@@ -4,7 +4,7 @@ namespace mrssoft\mdash;
 
 use Yii;
 use EMTypograph;
-use yii\base\Object;;
+use yii\base\BaseObject;;
 
 /**
  * Типограф Е.Муравьёва
@@ -13,7 +13,7 @@ use yii\base\Object;;
  * Class Mdash
  * @package mrssoft\mdash
  */
-class Mdash extends Object
+class Mdash extends BaseObject
 {
     /**
      * Опиции типографа
