@@ -1,17 +1,15 @@
-<?
+<?php
 
 namespace mrssoft\mdash;
 
 use Yii;
 use EMTypograph;
-use yii\base\BaseObject;;
+use yii\base\BaseObject;
 
 /**
  * Типограф Е.Муравьёва
  * http://mdash.ru/
  *
- * Class Mdash
- * @package mrssoft\mdash
  */
 class Mdash extends BaseObject
 {
@@ -44,12 +42,12 @@ class Mdash extends BaseObject
         if (empty($text)) {
             return '';
         }
-        
+
         if ($this->remote) {
             return $this->request($text);
-        } else {
-            return $this->local($text);
         }
+
+        return $this->local($text);
     }
 
     /**
@@ -59,7 +57,7 @@ class Mdash extends BaseObject
      */
     private function local($text)
     {
-        require_once(__DIR__ . '/EMT.php');
+        require_once __DIR__ . '/EMT.php';
 
         $typograph = new EMTypograph();
         $typograph->setup($this->options);
@@ -83,13 +81,13 @@ class Mdash extends BaseObject
             CURLOPT_POSTFIELDS => array_merge($this->options, ['text' => $text])
         ]);
         $result = curl_exec($ch);
-        
+
         if (curl_getinfo($ch, CURLINFO_HTTP_CODE) !== 200 || curl_errno($ch) || empty($result)) {
             Yii::warning('Mdash error: (' . curl_errno($ch) . ') ' . curl_error($ch) . ', response: ' . $result);
             $result = $text;
         }
         curl_close($ch);
-        
+
         $result = @json_decode($result, true);
         if (!is_array($result) || !array_key_exists('result', $result)) {
             $result = $text;

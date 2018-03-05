@@ -16,7 +16,7 @@ php composer.phar require --prefer-dist mrssoft/yii2-mdash "*"
 or add
 
 ```
-"mrssofy/yii2-mdash": "*"
+"mrssoft/yii2-mdash": "*"
 ```
 
 to the require section of your `composer.json` file.

@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace mrssoft\mdash;
 
@@ -18,7 +18,7 @@ class MdashFilter extends Validator
     public function validateAttribute($object, $attribute)
     {
         if (count($this->options) === 0 && array_key_exists('mdash', Yii::$app->getComponents())) {
-            $obj = Yii::$app->mdash;
+            $obj = Yii::$app->get('mdash');
         } else {
             $obj = new Mdash($this->options);
         }
