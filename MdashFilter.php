@@ -14,6 +14,7 @@ class MdashFilter extends Validator
     /**
      * @param \yii\base\Model $object
      * @param string $attribute
+     * @throws \yii\base\InvalidConfigException
      */
     public function validateAttribute($object, $attribute)
     {
